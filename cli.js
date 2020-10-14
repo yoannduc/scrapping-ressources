@@ -2,6 +2,9 @@
 
 require = require('esm')(module);
 const inquirer = require('inquirer');
+const yargs = require('yargs')
+
+console.log(yargs(process.argv.slice(2)).boolean('l').argv);
 
 inquirer
   .prompt([
